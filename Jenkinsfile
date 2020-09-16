@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building.. GO'
+                echo 'Building.. GO (Triggered)'
             }
         }
         stage('Test') {
