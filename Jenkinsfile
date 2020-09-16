@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building.. Java'
+                echo 'Building.. iOS'
             }
         }
         stage('Test') {
