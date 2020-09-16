@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building.. PHP'
+                echo 'Building.. PHP (Triggered)'
             }
         }
         stage('Test') {
