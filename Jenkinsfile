@@ -3,12 +3,13 @@ pipeline {
     
     environment {
         APP_ID = 'g-php'
+        COMPOSER = 'php -d memory_limit=-1 /usr/local/bin/composer.phar'
     }
 
     stages {
         stage('Build') {
             steps {
-                sh 'composer install'
+                sh '${COMPOSER} install'
             }
         }
         stage('Sonatype Scan') {
