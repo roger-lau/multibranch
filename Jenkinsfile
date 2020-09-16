@@ -4,17 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building.. PHP (Triggered)'
+                sh 'composer install'
             }
         }
-        stage('Test') {
+        stage('Sonatype Scan') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                sh 'nxiq .'
             }
         }
     }
