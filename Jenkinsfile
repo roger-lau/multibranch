@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building.. iOS (Triggered)'
+                echo 'Building.. iOS (Triggered within a min)'
             }
         }
         stage('Test') {
