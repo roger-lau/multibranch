@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building.. iOS now'
+                echo 'Building.. iOS (Triggered)'
             }
         }
         stage('Test') {
