@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.0.0-rc.2)
+  - Igor (0.5.0)
+  - SafetySDK (0.6.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.5)
+  - Igor
+  - SafetySDK
+
+SPEC REPOS:
+  https://nexus.local:8443/repository/cocoapods-proxy/:
+    - Alamofire
+    - Igor
+    - SafetySDK
+
+SPEC CHECKSUMS:
+  Alamofire: 74cfd3e9cd324e5bf928e72af8690a35ace2f8e0
+  Igor: f3d55015c6eaec33571b5cafaacef3913182ac08
+  SafetySDK: 28e52283ce0419e81d46aa83213dcf0d99bf26bb
+
+PODFILE CHECKSUM: c7ab5fe9888deb354ad8bd8dcc72788627b18d95
+
+COCOAPODS: 1.8.3
