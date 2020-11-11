@@ -8,11 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building Python...'
-                sh '''
-                    mkdir packages && cd $_
-                    pip download -r ../requirements.txt
-                '''
+                dir('packages') {
+                    echo 'Building Python...'
+                    sh '''
+                        pip download -r ../requirements.txt
+                    '''
+                }
             }
         }
         stage('Sonatype Scan') {
