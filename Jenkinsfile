@@ -15,7 +15,7 @@ pipeline {
         stage('Sonatype Scan') {
             steps {
                 echo 'Scanning with Sonatype...'
-                gradle nexusIQScan
+                sh 'gradle nexusIQScan'
             }
         }
     }
